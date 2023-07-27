@@ -1,1 +1,162 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --ocean: #404bbf;
+  --iris: #4d5ae5;
+  --cornflower: #e7e9fc;
+  --navyblue: #2e2f42;
+  --slate: #434455;
+  --cloud: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", Raleway, sans-serif;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+h2 {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+h3 {
+  color: var(--navyblue, #2e2f42);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
+.description-paragraph {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.homepage-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  font-family: "Raleway";
+}
+
+.homepage-link > span {
+  color: var(--iris);
+}
+
+.nav-link {
+  color: var(--navyblue);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+/* header {
+  display: flex;
+} */
+
+.contact-link {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.hero-section,
+footer {
+  background-color: var(--navyblue);
+}
+
+footer {
+  color: var(--cloud);
+}
+
+.hero-section > h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  color: white;
+}
+
+.hero-section > button {
+  border-radius: 4px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  gap: 10px;
+  color: white;
+}
+
+.filter-bar button {
+  border-radius: 4px;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--cloud, #f4f4fd);
+
+  display: flex;
+  padding: 12px 24px;
+  align-items: flex-start;
+  color: var(--iris);
+  transition: 0.3s all;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.filter-bar button:hover {
+  background-color: var(--ocean);
+  color: white;
+}
+
+.cloud-background {
+  background-color: var(--cloud);
+}
+
+.text-shadow {
+  transition: text-shadow 0.3s;
+}
+
+.text-shadow:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link:hover {
+  color: var(--ocean);
+}
+
+.nav-link::after {
+  position: relative;
+}
+
+.nav-link {
+  width: 48px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.contact-link:hover {
+  color: var(--ocean);
+  text-decoration: underline;
+}
